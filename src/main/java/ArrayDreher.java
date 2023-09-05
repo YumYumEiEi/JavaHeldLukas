@@ -23,7 +23,7 @@ public class ArrayDreher {
         System.out.println();
     }
 
-    private static void fillNumbersArray(int[] numbers) {
+    public static void fillNumbersArray(int[] numbers) {
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = ConsolReader.readInt();
         }
