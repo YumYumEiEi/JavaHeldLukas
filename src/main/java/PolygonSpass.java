@@ -7,10 +7,7 @@ public class PolygonSpass {
     final static String OCTOPUS = "\uD83D\uDC19";
 
     public static void go(){
-        Polygon polygon = new Polygon();
-        polygon.addPoint(5,8);
-        polygon.addPoint(9,20);
-        polygon.addPoint(33, 47);
+        Polygon polygon = resetWithRandomPolygon(new Polygon());
 
         for(int x = 1; x <= DIMENSION; x++){
             for (int y = 1; y <= DIMENSION; y++){
@@ -24,5 +21,21 @@ public class PolygonSpass {
             }
             System.out.println("");
         }
+    }
+
+    private static Polygon resetWithRandomPolygon(Polygon polygon) {
+        polygon.reset();
+        polygon = randomPolygonGeneration();
+        return polygon;
+    }
+
+    private static Polygon randomPolygonGeneration() {
+        Polygon polygon = new Polygon();
+        for(int point = 0; point < 3; point++){
+            int x = (int)(Math.random()*50);
+            int y = (int)(Math.random()*50);
+            polygon.addPoint(x, y);
+        }
+        return polygon;
     }
 }
