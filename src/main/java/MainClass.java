@@ -6,6 +6,7 @@ public class MainClass {
     final static int COLLATZ = 4;
     final static int KOMPLIZIERTES_MULTIPLIZIEREN = 5;
     final static int POLYGON_SPASS = 6;
+    final static int ARRAY_UMDREHEN = 7;
 
     public static void main(String[] args) {
 
@@ -14,7 +15,8 @@ public class MainClass {
                 "3: Zahlenschrift\n" +
                 "4: Collatz\n" +
                 "5: Kompliziertes Multiplizieren\n" +
-                "6: Polygon Spaß\n");
+                "6: Polygon Spaß\n" +
+                "7: Arrays umdrehen\n");
         int auszuführendenProgramm = new java.util.Scanner(System.in).nextInt();
 
         switch (auszuführendenProgramm) {
@@ -35,6 +37,9 @@ public class MainClass {
                 break;
             case POLYGON_SPASS:
                 PolygonSpass.go();
+                break;
+            case ARRAY_UMDREHEN:
+                ArrayDreher.go();
                 break;
         }
     }
