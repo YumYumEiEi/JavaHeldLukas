@@ -4,16 +4,20 @@ public class MainClass {
     final static int RIGHT_TRIANGLE = 2;
     final static int ZAHLENSCHRIFT = 3;
     final static int COLLATZ = 4;
+    final static int KOMPLIZIERTES_MULTIPLIZIEREN = 5;
+    final static int POLYGON_SPASS = 6;
 
     public static void main(String[] args) {
 
-        System.out.println( "1: Line Printer\n" +
-                            "2: Right Triangle\n" +
-                            "3: Zahlenschrift" +
-                            "4: Collatz");
+        System.out.println("1: Line Printer\n" +
+                "2: Right Triangle\n" +
+                "3: Zahlenschrift\n" +
+                "4: Collatz\n" +
+                "5: Kompliziertes Multiplizieren\n" +
+                "6: Polygon Spaß\n");
         int auszuführendenProgramm = new java.util.Scanner(System.in).nextInt();
 
-        switch (auszuführendenProgramm){
+        switch (auszuführendenProgramm) {
             case LINE_PRINTER:
                 LinePrinter.line();
                 break;
@@ -25,7 +29,13 @@ public class MainClass {
                 break;
             case COLLATZ:
                 System.out.println(Collatz.go());
-
+                break;
+            case KOMPLIZIERTES_MULTIPLIZIEREN:
+                Multiplizierer.go();
+                break;
+            case POLYGON_SPASS:
+                PolygonSpass.go();
+                break;
         }
     }
 }
