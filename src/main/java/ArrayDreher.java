@@ -1,3 +1,5 @@
+import Util.ConsolReader;
+
 public class ArrayDreher {
     public static void go() {
         System.out.println("Geben sie 9 Zahlen ein.");

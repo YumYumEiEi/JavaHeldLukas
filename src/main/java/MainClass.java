@@ -10,6 +10,8 @@ public class MainClass {
     final static int ARRAY_SPLIT = 8;
     final static int KNIFFELN = 9;
     final static int BERGSTEIGEN = 10;
+    final static int QUATROPHOBIA = 11;
+    final static int SODOKUFELD_CHECKER = 12;
 
     public static void main(String[] args) {
 
@@ -22,7 +24,9 @@ public class MainClass {
                 "7: Arrays umdrehen\n" +
                 "8: Array Split\n" +
                 "9: Kniffeln\n" +
-                "10: Bergsteigen\n");
+                "10: Bergsteigen\n" +
+                "11: Quatrophobia\n" +
+                "12: Sodokufeld Checker\n");
         int auszuführendenProgramm = new java.util.Scanner(System.in).nextInt();
 
         switch (auszuführendenProgramm) {
@@ -56,6 +60,11 @@ public class MainClass {
             case BERGSTEIGEN:
                 Bergsteiger.go();
                 break;
+            case QUATROPHOBIA:
+                Quatrophobia.go();
+                break;
+            case SODOKUFELD_CHECKER:
+                SodokufeldChecker.go();
         }
     }
 }

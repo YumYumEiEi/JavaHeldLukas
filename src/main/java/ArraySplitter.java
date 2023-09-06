@@ -1,3 +1,5 @@
+import Util.ConsolReader;
+
 public class ArraySplitter {
 
     public static void go() {

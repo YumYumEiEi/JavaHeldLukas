@@ -1,3 +1,5 @@
+import Util.ConsolReader;
+
 public class Collatz {
     private static long collatz (long number, long max){
         if(number > 1){

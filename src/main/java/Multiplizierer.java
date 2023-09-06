@@ -1,3 +1,5 @@
+import Util.ConsolReader;
+
 public class Multiplizierer {
     public static void go() {
         System.out.println("Gib eine nummer ein!");
